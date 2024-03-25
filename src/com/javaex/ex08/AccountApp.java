@@ -8,7 +8,7 @@ public class AccountApp {
         
         Scanner sc = new Scanner(System.in);
         boolean run = true;
-        int money;
+        int amount;
         
         Account account = new Account("312-89562-123456");
         
@@ -25,14 +25,14 @@ public class AccountApp {
             
                 case 1:
                     System.out.print("예금액>");
-                    money = sc.nextInt();
-                    account.deposit(money);
+                    amount = sc.nextInt();
+                    account.deposit(amount);
                     break;
                 
                 case 2:
                     System.out.print("출금액>");
-                    money= sc.nextInt();
-                    account.withdraw(money);
+                    amount= sc.nextInt();
+                    account.withdraw(amount);
                     break;
                     
                 case 3:

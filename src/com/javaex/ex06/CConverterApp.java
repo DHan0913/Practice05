@@ -15,7 +15,7 @@ public class CConverterApp {
         dollar = CConverter.toDoller(won);
         System.out.println(won + "원은 " + dollar + "달러입니다.");
         
-        //100달려를 원으로 출력하기
+        //100달러를 원으로 출력하기
         dollar = 100;
         won = CConverter.toKWR(dollar);
         System.out.println(dollar + "달러는 " + won + "원입니다.");
