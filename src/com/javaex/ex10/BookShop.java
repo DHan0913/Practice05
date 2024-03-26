@@ -30,7 +30,7 @@ public class BookShop {
         // 코드작성
         for (Book book : books) {
             if (book.getBookNo() == num) {
-                book.rent(); // Call rent method if book number matches
+                book.rent();
                 break;
             }
         }

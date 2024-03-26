@@ -10,10 +10,9 @@ public class Book {
 		this.bookNo = bookNo;
 		this.title = title;
 	    this.author = author;
-	    this.stateCode = 1; // Initializing stateCode to 1 (available)
+	    this.stateCode = 1; // 
 	    }
 
-	    // Getters and Setters
 	    public int getBookNo() {
 	        return bookNo;
 	    }
@@ -46,13 +45,11 @@ public class Book {
 	        this.stateCode = stateCode;
 	    }
 
-	    // Rent method
 	    public void rent() {
-	        this.stateCode = 0; // Set stateCode to 0 (rented)
+	        this.stateCode = 0; 
 	        System.out.println(this.title + "이(가) 대여 됐습니다.");
 	    }
 
-	    // Print method
 	    public void print() {
 	        System.out.print("책번호: " + this.bookNo + ", 제목: " + this.title + ", 작가: " + this.author);
 	        if (this.stateCode == 1) {
