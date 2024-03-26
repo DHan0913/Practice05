@@ -18,13 +18,19 @@ public class FriendApp {
         for (int i = 0; i < friendArray.length; i++) {
             System.out.print("이름: ");
             String name = sc.next();
-            System.out.print("전화번호: ");
+            System.out.print("핸드폰: ");
             String hp = sc.next();
             System.out.print("학교: ");
             String school = sc.next();
+            System.out.println("-------------------------------------");
             //for문 끝
             // Friend 객체 생성 및 배열에 추가
-            friendArray[i] = new Friend(name, hp, school);
+           Friend newFriend = new Friend();
+           newFriend.setName(name);
+           newFriend.setHp(hp);
+           newFriend.setSchool(school);
+           friendArray[i] = newFriend;
+            
         }
         //친구정보 3명 입력 로직 --> 반복문 사용
             
@@ -34,7 +40,6 @@ public class FriendApp {
 
         	for (int i = 0; i < friendArray.length; i++) {
         	    friendArray[i].showInfo();
-        	    System.out.println();
         }
 
         sc.close();

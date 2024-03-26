@@ -6,26 +6,21 @@ public class Friend {
     private String hp;
     private String school;
 
- 
-    public Friend(String name, String phone, String school) {
-        this.name = name;
-        this.hp = phone;
-        this.school = school;
-    }
+
     
     // getter/setter 작성
 	public String getName() {
 		return name;
 	}
 	
-	void setName(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 	
 	public String getHp() {
 		return hp;
 	}
-	public void setHP(String hp) {
+	public void setHp(String hp) {
 		this.hp = hp;
 		
 	}
