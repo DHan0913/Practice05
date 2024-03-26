@@ -29,10 +29,10 @@ public class BookShop {
 
         // (1) 입력된 번호에 맞는 책을 찾아 대여 되었음(상태코드=0)을 체크 합니다.
         // 코드작성
-        //D
+       
         for (Book book : books) {
             if (book.getBookNo() == num) {
-                book.rent();
+                book.rent();  //D
                 break;
             }
         }
@@ -45,10 +45,10 @@ public class BookShop {
 
     //(2)전달받은 배열을 모두 출력하는 메소드
     	//코드작성
-    //E
+  
     private static void displayBookInfo(Book[] books) {
         for (Book book : books) {
-            book.print(); 
+            book.print();   //E
         }
     }
 }

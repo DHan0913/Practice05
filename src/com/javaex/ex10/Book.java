@@ -50,13 +50,12 @@ public class Book {
 	    
 	    
 	    //대여, 책 상태 출력 메서드 
-	    //D
-	    public void rent() {
+	    public void rent() { //D
 	        this.stateCode = 0; 
 	        System.out.println(this.title + "이(가) 대여 됐습니다.");
 	    }
-	    //E
-	    public void print() {
+	   
+	    public void print() { //E
 	        System.out.print("책번호: " + this.bookNo + ", 제목: " + this.title + ", 작가: " + this.author);
 	        if (this.stateCode == 1) {
 	            System.out.println(", 상태: 재고있음");

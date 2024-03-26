@@ -8,7 +8,7 @@ public class StringUtil {
     			resultStr+=(str); 
             }
             
-    			return resultStr.toString(); // StringBuilder를 String으로 변환하여 반환
+    			return resultStr; 
         }
     
 

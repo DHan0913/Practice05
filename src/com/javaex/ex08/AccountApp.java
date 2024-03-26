@@ -12,7 +12,7 @@ public class AccountApp {
         
         Account account = new Account("312-89562-123456");
         
-        while(run){
+        while(run){ //while 시작
             System.out.println("");
             System.out.println("----------------------------------");
             System.out.println("1.예금 | 2.출금 | 3.잔고 |4.종료");
@@ -21,7 +21,7 @@ public class AccountApp {
             
             int menuNo = sc.nextInt();
             
-            switch(menuNo){
+            switch(menuNo){ //switch 시작
             
                 case 1:
                     System.out.print("예금액>");
@@ -49,9 +49,9 @@ public class AccountApp {
                     System.out.println("다시입력해주세요");
                     break;
                     
-            }//switch 
+            }//switch 끝
             
-        }//while
+        }//while 끝
         sc.close();
     }
 
